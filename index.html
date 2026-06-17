@@ -8,43 +8,39 @@
 </head>
 
 <body>
-  <main class="birthday-card">
-    <section class="cover" id="cover">
-      <button class="sticker" id="sticker" type="button" aria-label="생일 카드 열기">
-        <img class="sticker-dog" src="./dog1.jpeg" alt="birthday dog">
-      </button>
+  <div class="scene">
+    <div class="card" id="card">
+      <div class="cover">
+        <button class="sticker" id="sticker">
+          <img class="sticker-dog" src="./dog1.jpeg" alt="birthday cake">
+        </button>
+        <div class="open-text">채영님 선물 🎁</div>
+      </div>
 
-      <div class="open-text">채영님 선물 🎁</div>
-      <div class="tap-text">멍멍이를 눌러보세요 🐾</div>
-    </section>
+      <div class="inside">
+        <div class="message">Early Happy Birthday!</div>
+        <div class="sub-message">77ㅑ~ 미리 생일 축하함니다! 행복한 하루 보내세요~!!</div>
 
-    <section class="inside" id="inside">
-      <div class="message">Early Happy Birthday!</div>
-      <div class="sub-message">77ㅑ~ 미리 생일 축하함니다! 행복한 하루 보내세요~!!</div>
+        <div class="firework f1"></div>
+        <div class="firework f2"></div>
+        <div class="firework f3"></div>
+        <div class="firework f4"></div>
+        <div class="firework f5"></div>
 
-      <div class="firework f1"></div>
-      <div class="firework f2"></div>
-      <div class="firework f3"></div>
-      <div class="firework f4"></div>
-      <div class="firework f5"></div>
-
-      <div class="speech">🎉 멍멍 🎂</div>
-
-      <img class="cake" src="./cake.png" alt="birthday cake">
-      <img class="dog" src="./dog.png" alt="birthday dog">
-
-      <div class="ground"></div>
-    </section>
-  </main>
+        <div class="speech">🎉 멍멍 🎂</div>
+        <img class="cake" src="./cake.png" alt="birthday cake">
+        <img class="dog" src="./dog.png" alt="birthday dog">
+        <div class="ground"></div>
+      </div>
+    </div>
+  </div>
 
   <script>
     const sticker = document.getElementById("sticker");
-    const cover = document.getElementById("cover");
-    const inside = document.getElementById("inside");
+    const card = document.getElementById("card");
 
     sticker.addEventListener("click", () => {
-      cover.classList.add("hide");
-      inside.classList.add("show");
+      card.classList.add("open");
     });
   </script>
 </body>
